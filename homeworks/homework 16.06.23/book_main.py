@@ -2,10 +2,17 @@ import telebot
 from telebot import types
 import json
 import datetime
+import sqlite3
 bot = telebot.TeleBot('6111880037:AAFr90nbxiE0VOIPPVoLeWviFanWggyM-AA')
 
 ERROR_TEXT = "Произошла ошибка, попробуйте ещё раз или обратитесь к администратору"
 DEBUG = False  # TODO debug == true - идёт разработка
+
+#TODO Таблица
+
+
+
+
 
 
 def decorator_exception_1(func):
@@ -39,7 +46,12 @@ def b_start(message):
 
     <i>Публикация книг</i>
     /publish - Публикация твоей новой книги
+    
+    <i>Список книг</i>
+    /list - Список всех опубликованный книг
     """
+
+
     markup = types.InlineKeyboardMarkup()
     bot.send_message(message.chat.id, commands, parse_mode='html', reply_markup=markup)
 
@@ -61,15 +73,38 @@ def b_book(message: telebot.types.Message):
     name: str = data[3].strip().capitalize()
     # print(title, count, price)
 
-    with open("data/book.json", mode="r", encoding="utf-8") as file:
-        books: list[dict] = json.load(file)
-        books.append({"id": int(books[-1]["id"]) + 1, "title": title, "count": genre, "price": price, "name": name})
-
-    with open("data/book.json", mode="w", encoding="utf-8") as file:
-        json.dump(books, file)
+    conn = sqlite3.connect('mydatabase.db')
+    cursor = conn.cursor()
 
 
+    cursor.execute(f'INSERT INTO books (title, genre, price, name) VALUES 'f"('{title}', '{genre}', '{price}', '{name}');")
+    conn.commit()
+    conn.close()
 
+@decorator_exception_1
+@bot.message_handler(commands=['list'])
+def b_list(message):
+    bot.send_message(message.chat.id,"<b>Вот список книг:</b>\n\n")
+    conn = sqlite3.connect('mydatabase.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM books")
+
+
+    rows = cursor.fetchall()
+
+
+    for row in rows:
+        id = row[0]
+        title = row[1]
+        genre = row[2]
+        price = row[3]
+        name = row[4]
+
+
+        bot.send_message(message.chat.id,f'Title: {title},\nGenre: {genre},\nPrice: {price}, \nName: {name}\n')
+
+
+    conn.close()
 
 
 

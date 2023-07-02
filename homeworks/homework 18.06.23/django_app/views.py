@@ -1,16 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django_app import models
-
+import openpyxl
 
 
 
 
 
 def post_publish(request):
-    pass
-def update_publish(request):
-    pass
+    workbook = openpyxl.Workbook()
+    sheet = workbook.active
+    sheet['A1'] = "user"
+    sheet['A1'] = "title"
 def get_requests(request):
     #todo выборка
     select1_raw = """

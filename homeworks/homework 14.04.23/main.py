@@ -1,16 +1,36 @@
-# This is a sample Python script.
+#TODO task1
+import re
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+email = [
+    "user1@example.com",
+    "user2@gmail.com",
+    "user3@yahoo.com",
+    "user4@hotmail.com"
+]
 
+domain_pattern = r'@([a-zA-Z0-9.-]+)'
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+domains = [re.search(domain_pattern, i).group(1) for i in email]
 
+print(domains)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+#task2
+import re
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+text = "basketball, football, mouse, animal, award, cup"
+
+vowel_re = r'\b[aeiouAEIOU][a-zA-Z]*\b'
+
+vowel_words = re.findall(vowel_re, text)
+
+print(vowel_words)
+#task3
+import re
+
+text = "basketball:football-mouse,animal/award]cup"
+
+split_pattern = r'[,;|\-]'
+
+split_parts = re.split(split_pattern, text)
+
+print(split_parts)

@@ -31,7 +31,7 @@ while True:
 def find_max_and_variable_name(**kwargs):
     max_value = max(kwargs.values())
     max_variable = max(kwargs, key=kwargs.get)
-    
+
     return max_value, max_variable
 
 max_value, max_variable = find_max_and_variable_name(askarov=askarov, bekmuhanov=bekmuhanov, ernur=ernur, peshaya=peshaya, karim=karim, sharimazdanov=sharimazdanov)

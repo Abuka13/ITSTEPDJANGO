@@ -1,36 +1,34 @@
-#TODO task1
-import re
+from bs4 import BeautifulSoup
+import requests
 
-email = [
-    "user1@example.com",
-    "user2@gmail.com",
-    "user3@yahoo.com",
-    "user4@hotmail.com"
-]
+# Отправляем GET-запрос на страницу с прогнозом погоды
+url = 'https://www.gismeteo.kz/weather-astana-5164/10-days/'
+response = requests.get(url)
 
-domain_pattern = r'@([a-zA-Z0-9.-]+)'
+# Создаем объект Beautiful Soup для анализа HTML-кода
+soup = BeautifulSoup(response.text, 'html.parser')
 
-domains = [re.search(domain_pattern, i).group(1) for i in email]
+# Ищем информацию о погоде на 18 августа
+forecast_blocks = soup.find_all('div', class_='wforecast')
 
-print(domains)
+for block in forecast_blocks:
+    date_element = block.find('div', class_='ws_date')
+    if date_element and '18 августа' in date_element.text:
+        temperature = block.find('span', class_='unit unit_temperature_c')
+        description = block.find('div', class_='wicon')
 
-#task2
-import re
+        # Извлекаем текст информации о погоде
+        temperature_text = temperature.text if temperature else 'Не найдено'
+        description_text = description.get('title') if description else 'Не найдено'
 
-text = "basketball, football, mouse, animal, award, cup"
 
-vowel_re = r'\b[aeiouAEIOU][a-zA-Z]*\b'
+        print('Погода в Астане на 18 августа:')
+        print(f'Температура: {temperature_text}')
+        print(f'Описание: {description_text}')
 
-vowel_words = re.findall(vowel_re, text)
 
-print(vowel_words)
-#task3
-import re
 
-text = "basketball:football-mouse,animal/award]cup"
 
-split_pattern = r'[,;|\-]'
 
-split_parts = re.split(split_pattern, text)
 
-print(split_parts)
+

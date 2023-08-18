@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42b76530-89fc-47b2-be73-4933479bade8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/homework 09.06.23.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-14-13.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-16-22.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-16-38.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-16-50.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-25-18.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-25-41.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-26-13.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-33-44.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-34-46.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-35-28.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-36-52.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-42-45.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/temp/отчёт_2023-06-02_20-49-28.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/отчёт.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/export_users/пользователи.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/users.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/export.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/схема движения данных (3).drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/этапы.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TwQ6AqvZxEFtwL5gZFjnqbMp5k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 09.06.23 zhaloba",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="django_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42b76530-89fc-47b2-be73-4933479bade8" name="Changes" comment="" />
+      <created>1691951485247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691951485247</updated>
+      <workItem from="1691951486394" duration="119000" />
+      <workItem from="1692030395196" duration="1486000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

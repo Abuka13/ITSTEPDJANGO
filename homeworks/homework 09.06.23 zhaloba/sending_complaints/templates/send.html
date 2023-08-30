@@ -49,18 +49,20 @@
   <body class="bg-light">
 
 <div class="container">
-  <main>
+
+  <main class="form-signin">
     
 
 
 
        <h4 class="py-5 mb-5 text-center">Жалоба</h4>
       <hr class="my-4">
-       <form class="needs-validation" novalidate>
+       <form action="{% url "sending" %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
          <div class="row g-3">
           <div class="col-12">
             <label for="firstName" class="form-label">Автор</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Автор" value="" required>
+            <input name="author" class="form-control" id="firstName" placeholder="Автор" value="" required>
             <div class="invalid-feedback">
               Valid first name is required.
             </div>
@@ -72,7 +74,7 @@
               <label for="username" class="form-label">Описание</label>
               <div class="input-group has-validation">
 
-                <input type="text" class="form-control d-block bg-light p-5 h-200" id="username" placeholder="Описание" required>
+                <input name="description" class="form-control d-block bg-light p-5 h-200" id="username" placeholder="Описание" required>
               <div class="invalid-feedback">
                   Your username is required.
                 </div>
@@ -81,14 +83,14 @@
 
             <div class="col-12">
               <label for="number" class="form-label">Номер</label>
-              <input type="number" class="form-control" id="email" placeholder="+7">
+              <input name="number" class="form-control" id="email" placeholder="+7">
             </div>
 
 
 
             <div>
-              <label for="country" class="form-label">Город</label>
-              <select class="form-select" id="country" required>
+              <label for="city" class="form-label">Город</label>
+              <select name="city" class="form-select" id="country" required>
                 <option value="">Choose...</option>
                 <option>Astana</option>
                 <option>Almaty</option>
@@ -126,7 +128,7 @@
                     <label class="label" for="id_time">Time:</label>
                     <input class="input" type="time" id="id_time" name="time">
                 </div>
-
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить жалобу</button>
             </form>
           </div>
 
@@ -136,7 +138,7 @@
 
 
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить жалобу</button>
+
         </form>
       </div>
     </div>

@@ -1,19 +1,16 @@
 import contextlib
-import datetime
-import re
-import time
 
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+
 import sqlite3
 
-import requests
+from django.shortcuts import render, redirect
 
-from django.http import HttpResponse, JsonResponse
+
 from django.shortcuts import render
-from bs4 import BeautifulSoup
 
 
+def success_page(request):
+    return render(request, 'success_page.html')
 
 def home(request):
     return render(request, "home.html")
@@ -21,7 +18,7 @@ def home(request):
 
 def sending_complaints(request):
     if request.method == "GET":
-        return render(request, "send.html")
+        return render(request, 'send.html')
     elif request.method == "POST":
         author = request.POST.get("author")
         description = request.POST.get("description")
@@ -30,9 +27,11 @@ def sending_complaints(request):
         date = request.POST.get("date")
         time = request.POST.get("time")
 
-        with contextlib.closing(sqlite3.connect('database1.db')) as connection:
+        with contextlib.closing(sqlite3.connect('database/complain.db')) as connection:
             with connection as cursor:
-                cursor.execute("INSERT INTO book_posts (title, description, price, count) VALUES (?, ?, ?, ?);", (title, description, price, count))
+                cursor.execute("INSERT INTO complaints (author, description, number, city, date, time) VALUES (?, ?, ?, ?, ?, ?);", (author, description,number, city, date, time))
+        return redirect(success_page)
+
 
 
 

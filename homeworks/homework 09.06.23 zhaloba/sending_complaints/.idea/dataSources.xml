@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="complain" uuid="58a1eef1-b238-4ab8-a568-fd8f2a06c26b">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>53869026-3b6b-472d-8e86-9df0f6d94732</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\Admin\Desktop\Github\ITSTEPDJANGO\homeworks\homework 09.06.23 zhaloba\sending_complaints\database\complain.db</jdbc-url>

@@ -19,6 +19,9 @@ from django.urls import path
 from django_app import views
 
 urlpatterns = [
-    path('/home', views.home),
+    path('home/', views.home),
+    path('home/list/', views.suggests_list, name='suggests_list'),
+    path('send/', views.sending_suggests, name='sending_suggests'),
+    path('success/', views.success,name='success'),
 
 ]

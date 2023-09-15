@@ -1,0 +1,16 @@
+КУПИТЬ КОТА ДАТАБАЗЫ 
+
+-СОЗДАТЬ ТАБЛИЦУ ПОД НАЗВАНИЕМ buy_cats
+
+-ФАКТОРЫ:
+
+-BREED (VARCHAR50)
+
+-COLOR (VARCHAR20)
+
+-AGE INT
+
+-NATURE	(VARCHAR100)
+
+-WEIGHT INT
+

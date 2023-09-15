@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h4 class="mb-3">Измените данные и отправьте форму</h4>
+        <form action="{{ url_for( 'change_camel' )}}" method="post" class="needs-validation" novalidate="">
+
+          <div class="row g-3">
+              <input type="hidden" name="pk" value="{{ post.id }}"/>
+
+            <div class="col-sm-6">
+              <label for="title" class="form-label">Введите название породы</label>
+              <input name="breed" type="text" class="form-control" id="breed" placeholder="название" value="{{ post.breed }}" required="">
+            </div>
+            <div>
+              <label for="city" class="form-label">Пол верблюда:</label>
+              <select name="gender" class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>Мужской</option>
+                <option>Женский</option>
+                <option>Робот</option>
+                <option>Нету</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label for="title" class="form-label">Возраст верблюда:</label>
+              <input name="age" type="text" class="form-control" id="age" placeholder="Возраст" value="{{ post.age }}" required="">
+            </div>
+            <div class="col-sm-6">
+              <label for="title" class="form-label">Вес верблюда:</label>
+              <input name="weight" type="text" class="form-control" id="weight" placeholder="Вес" value="{{ post.weight }}" required="">
+            </div>
+
+            <div class="col-12">
+              <label for="description" class="form-label">Характер верблюда:</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">#</span>
+                  <textarea name="nature" class="form-control" id="description" placeholder="Характер" required="" rows="5">{{ post.nature }}</textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="title" class="form-label">Цена верблюда:</label>
+              <input name="price" type="text" class="form-control" id="price" placeholder="Вес" value="{{ post.price }}" required="">
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-warning btn-lg" type="submit">Обновить</button>
+        </form>
+      </div>
+    </div>
+</div>
+</body>
+</html>

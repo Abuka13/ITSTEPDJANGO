@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            background-color: #292e2a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            left: 0;
+            top: 0;
+            font-size: 24px;
+            width: 96.1%;
+            position: fixed;
+        }
+
+        .logo {
+            font-weight: bold;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+        .link1 {
+            color: gray;
+            margin-left: 8%;
+            font-size: 20px;
+        }
+        .link2 {
+            color:white;
+            margin-right: 9%;
+            padding-top: 0.2%;
+            font-size: 15px;
+        }
+        .link3 {
+            color: gray;
+            
+            
+        }
+        .container {
+            height: 30px;
+            width: 80%;
+            background-color: whitesmoke;
+            margin-top: 5%;
+            margin-left: 9.5%;   
+        }
+        .container1 {            
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            font-size: 24px;
+            width: 80%;
+            margin-left: 9.5%;
+              
+        }
+        .buttons {
+            margin-top: 2%;
+        }
+        button {
+            background-color: #334da6;
+            color: white;
+            border: none;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .container2 {                  
+            height: 30px;
+            border: 1px solid gainsboro;
+            width: 80%;
+            margin-left: 9.5%;
+            margin-top: 4%;
+            background-color: whitesmoke;   
+        }
+        .get {
+            font-size: 15px;
+            top: 50%;
+        }
+        .container3 {            
+            height: 150px;
+            border: 1px solid gainsboro;
+            width: 80%;
+            margin-left: 9.5%;
+            margin-top: 4%;
+            background-color: whitesmoke;   
+            font-size: 12px;
+        }
+        .container4 {            
+            height: 400px;
+            border: 1px solid gainsboro;
+            width: 80%;
+            margin-left: 9.5%;
+            margin-top: 4%;
+            background-color: whitesmoke;   
+            font-size: 12px;
+        }
+        .container5 {            
+            display: flex;
+            flex-direction: row;
+        }
+        .select {
+            height: 30px;
+            width: 75%;
+            border: 1px solid gainsboro;
+            margin-left: 5%;
+            margin-top: 2.2%;
+        }
+        .container6 {
+            display: flex;
+            flex-direction: row;
+        }
+        .input {
+            margin-left: 6.7%;
+            margin-top: 2.2%;
+            border: 1px solid gainsboro;
+            width: 75%;
+            height: 230px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a class= "link1" href="https://www.django-rest-framework.org/">Django REST framework</a>
+        <a class= "link2" href="https://www.django-rest-framework.org/">Log in</a>
+    </div>
+    <div class="container">
+        <a class="link3" href="file:///C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework%2018.09.23/api.html">Weather</a>
+    </div>
+    <div class="container1">
+        <h3>Weather</h3>
+        <div class="buttons">
+            <button style="background-color: red;">Delete</button>
+            <button>OPTIONS</button>
+            <button>GET</button>
+        </div>
+    </div>
+    <div class="container2">
+        <p class="get">GET   &nbsp;      /weather/</p>
+    </div>
+    <div class="container3">
+        <p style="margin-left: 1%;">HTTP 200 OK</p>
+        <p style="margin-left: 1%;">Allow:<a style="color:skyblue;">OPTIONS, GET, POST</a></p>
+        <p style="margin-left: 1%;">Content-Type:<a style="color:skyblue;">application/json</a></p>
+        <p style="margin-left: 1%;">Vary:<a style="color:skyblue;">Accept</a></p>
+        <p></p>
+        <p style="margin-left: 1%;"> {} </p>
+
+    </div>
+    <div class="container4">
+        <div class="container5">
+            <h3 style="margin-left: 9%;  margin-top: 3%;">Media Type:</h3>
+            <select class="select">
+                <option value="application/json" selected="">application/json</option>
+                <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+                <option value="multipart/form-data">multipart/form-data</option>
+            </select>
+        </div>
+        <div class="container6">
+            <h3 style="margin-left: 9%;  margin-top: 3%;">Content:</h3>
+            <input type="text" class="input">
+        </div>
+        <button style="margin-left:92%; margin-top: 2%; "><a style="color: white;" href="file:///C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework%2018.09.23/api.html">POST</a></button>
+    </div>
+    <div class="container4">
+        <div class="container5">
+            <h3 style="margin-left: 9%;  margin-top: 3%;">Media Type:</h3>
+            <select class="select">
+                <option value="application/json" selected="">application/json</option>
+                <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+                <option value="multipart/form-data">multipart/form-data</option>
+            </select>
+        </div>
+        <div class="container6">
+            <h3 style="margin-left: 9%;  margin-top: 3%;">Content:</h3>
+            <input type="text" class="input">
+        </div>
+        <div class="container7">
+            <button style="margin-left:86%; margin-top: 2%; "><a style="color: white;" href="file:///C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework%2018.09.23/api.html">PUT</a></button>
+            
+        </div>    
+    </div>
+</body>
+
+</html>

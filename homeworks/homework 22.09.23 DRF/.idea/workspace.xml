@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4964735-5096-4b77-b7a9-d2215a827f74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/django_app/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 22.09.23 DRF",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 28.08.23/жалоб и предложений» на Django ORM",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,7 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1695800526245</updated>
       <workItem from="1695800527612" duration="1144000" />
-      <workItem from="1695803021657" duration="1261000" />
+      <workItem from="1695803021657" duration="1936000" />
+      <workItem from="1695833085863" duration="612000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,8 @@
+1) npx creacte-react-app frontend --template redux-typescript
+
+#старт 
+cd frontend
+npm start
+
+npm i axios prettier
+npm run build

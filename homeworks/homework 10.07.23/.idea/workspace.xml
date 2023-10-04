@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e391951-f376-4335-bd5c-0423bb72977e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/django_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/homework 10.07.23.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_settings/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_settings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_settings/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/Django-4.2.5.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/Django-4.2.5.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip-22.3.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip-22.3.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/sqlparse-0.4.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/sqlparse-0.4.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Scripts/django-admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/env/Scripts/django-admin.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/env/Scripts/pip.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Scripts/pip3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/env/Scripts/pip3.11.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/env/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/Scripts/sqlformat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/env/Scripts/sqlformat.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework 11.10.23/.idea/homework 11.10.23.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework 11.10.23/.idea/homework 11.10.23.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -39,7 +61,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPHW/homeworks/homework 08.04.23",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 10.07.23",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,6 +108,7 @@
       <workItem from="1695278310905" duration="2425000" />
       <workItem from="1695353655964" duration="2212000" />
       <workItem from="1695366649462" duration="91000" />
+      <workItem from="1696397646053" duration="11892000" />
     </task>
     <servers />
   </component>

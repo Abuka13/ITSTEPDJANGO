@@ -1,0 +1,541 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3500px;
+}
+.container {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+
+}
+header {
+    width: 100%;
+    height: 13%;
+    position: fixed;
+    margin-top: -4%;
+    background-color: white;
+    left: 0;
+
+}
+header svg {
+    margin-top: 5%;
+}
+.block {
+    width: 50%;
+    height: 100%;
+}
+.block a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 23px;
+    font-weight: 700;
+
+
+}
+.menu {
+    width: 50%;
+    height: 100%;
+    text-align: end;
+    padding-top: 4%;
+    padding-right: 0.5%;
+}
+.menu a {
+
+    text-decoration: none;
+    color: #1e1e1e;
+    padding: 7px;
+    gap: 50px;
+
+}
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-image: url(https://aura.if.ua/images/stati/2/1-1-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+    margin-left: 5%;
+    background-attachment: fixed;
+    margin-top: 4%;
+
+}
+.image h1 {
+    color: white;
+
+    width: 60%;
+    height: 45%;
+    margin-left: 5%;
+    font-size: 70px;
+    padding-top: 10%;
+    line-height: 110px;
+}
+.button {
+    background-color: white;
+    display: block;
+    height: 5%;
+    width: 15%;
+    border: none;
+
+    margin-left: 5.5%;
+}
+.button:hover {
+    color: #a26028;
+}
+.container2 {
+    width: 90%;
+    height: 21%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: #dbdbdb;
+}
+.image2 {
+    background-image: url(https://valentaymbud.com.ua/wp-content/uploads/2016/10/11-1.jpg);
+    height: 100%;
+    width: 45%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.block1 p {
+
+    color: #f5f5f5;
+}
+.block2 {
+    width: 55%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+.block3 {
+    width: 90%;
+    padding-top: 11%;
+    align-items: center;
+}
+.block2 h1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    width: 70%;
+}
+.block2 p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 70%;
+    line-height: 25px;
+}
+.button1 {
+    background-color: black;
+    display: block;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 20%;
+    height: 35px;
+    color: #f5f5f5;
+    border: none;
+}
+.button1:hover {
+    transition: 0.5s;
+    background-color:#a26028;
+}
+.container3 {
+    width: 100%;
+    height: 35%;
+    background-color: #dbdbdb;
+}
+.container3 h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 4%;
+    right: 0;
+    max-height: 50px;
+    font-size: 45px;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    justify-content: space-around;
+
+}
+.button2 {
+    display: block;
+    width: 13%;
+    height: 40px;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    margin-top: 3%;
+}
+.button2:hover {
+    background-color: #a26028;
+    transition: 0.5s;
+}
+.block4 {
+    background-image: url(https://static.wixstatic.com/media/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg/v1/fill/w_538,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg);
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+}
+
+.block5 {
+    background-image: url(https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_531,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg);
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+}
+.block6 {
+    background-image: url(https://static.wixstatic.com/media/74f558_9b1cc2c7424d47bf83b890c15ed8127f~mv2_d_5625_3750_s_4_2.jpg/v1/fill/w_531,h_945,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_9b1cc2c7424d47bf83b890c15ed8127f~mv2_d_5625_3750_s_4_2.jpg);
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+}
+.block4 p {
+    text-align: center;
+
+    color: white;
+    margin-top: 280px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.block5 p {
+    text-align: center;
+
+    margin-top: 280px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.block6 p {
+    display: block;
+    text-align: center;
+    margin-top: 280px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.container5 {
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+}
+.block7 {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+.block8 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16%;
+    color: white;
+}
+.block8 h1 {
+    margin: 0;
+    font-size: 35px;
+}
+.block8 p {
+    line-height: 30px;
+}
+.block9 {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+.block10 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16%;
+    color: white;
+}
+table {
+    border-spacing: 100px 30px;
+}
+.input {
+    width: 200%;
+    box-sizing: border-box;
+
+
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+   }
+.input1 {
+    width: 200%;
+    box-sizing: border-box;
+
+
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+input:hover {
+    border-bottom: white;
+    transition: 0.5s;
+}
+.block20 {
+    margin-left: 48%;
+}
+
+.online {
+    display: block;
+    bottom: 3px;
+    right: 3px;
+    background-color: #a26028;
+    position: fixed;
+}
+</style>
+<script type="text/Javascript">
+        var snowmax=100
+var snowcolor=new Array("#b9dff5","#b9dff5","#b9dff5","#b9dff5","#b9dff5")
+var snowtype=new Array("Times")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=35
+var snowminsize=8
+var snowingzone=1
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {
+        rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+        if (ie5 || opera) {
+                marginbottom = document.body.scrollHeight
+                marginright = document.body.clientWidth-15
+        }
+        else if (ns6) {
+                marginbottom = document.body.scrollHeight
+                marginright = window.innerWidth-15
+        }
+        var snowsizerange=snowmaxsize-snowminsize
+        for (i=0;i<=snowmax;i++) {
+                crds[i] = 0;
+            lftrght[i] = Math.random()*15;
+            x_mv[i] = 0.03 + Math.random()/10;
+                snow[i]=document.getElementById("s"+i)
+                snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+                snow[i].size=randommaker(snowsizerange)+snowminsize
+                snow[i].style.fontSize=snow[i].size+'px';
+                snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+                snow[i].style.zIndex=1000
+                snow[i].sink=sinkspeed*snow[i].size/5
+                if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+                if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+                if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+                if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+                snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+                snow[i].style.left=snow[i].posx+'px';
+                snow[i].style.top=snow[i].posy+'px';
+        }
+        movesnow()
+}
+
+function movesnow() {
+        for (i=0;i<=snowmax;i++) {
+                crds[i] += x_mv[i];
+                snow[i].posy+=snow[i].sink
+                snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i])+'px';
+                snow[i].style.top=snow[i].posy+'px';
+
+                if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+                        if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+                        if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+                        if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+                        if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+                        snow[i].posy=0
+                }
+        }
+        var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+        document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+        window.onload=initsnow
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="block">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.25 31.386 160 135.979" viewBox="20.25 31.386 160 135.979" height="35" width="35" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-labelledby="svgcid-iq43w7-as2vtk"><defs><style>#comp-kbanqr04 svg [data-color="1"] {fill: #A26028;}</style></defs><title id="svgcid-iq43w7-as2vtk">Главная</title>
+                    <g>
+                        <path fill="#B46A2A" d="M91.47 42.012L80.845 31.386 20.25 92.439v74.926h15.027V99.744l-.174-.085L91.47 42.012z" data-color="1"></path>
+                        <path fill="#B46A2A" d="M130.098 42.04l.028-.028L119.5 31.386 52.313 99.721l.022.023h-.022v67.621h99.159v-15.027l-.495-52.594h-.023l.023-.023-32.186-30.839-10.248 10.248 27.407 26.713v46.495H67.339V105.87l52.149-53.039 45.822 44.506-.175.085.088 69.943h15.027V92.439L130.098 42.04z" data-color="1"></path>
+                    </g>
+                </svg>
+            
+                <a href="">КВ-Ремстрой</a>
+            
+            </div>
+            <div class="menu">
+                <a href="#Main">Главная</a>
+                <a href="#About">Онас</a>
+                <a href="#Options">Услуги</a>
+                <a href="#Contact">Контакты</a>              
+            </div>
+        </div> 
+    </header>
+    <div class="online">
+        <i class='far fa-comment-alt'></i>
+        <p>Мы онлайн!</p>
+
+    </div>
+    <div class="image">
+        <h1 id="Main">Дизайнерский ремонт и отделка премиум-класса</h1>
+        <button class="button">
+            Заказать расчет
+        </button>
+            
+    </div>
+    <div class="block1">
+        <p>a</p>
+    </div>
+    <div class="container2">
+        <div id="About" class="image2"></div>
+        <div class="block2">
+            <div class="block3">
+                <h1>Ведущая компания по ремонту жилья</h1>
+                <p>Это текст. Нажмите здесь, чтобы изменить его. Всё просто: нажмите «Редактировать текст» или нажмите дважды, чтобы добавить контент и настроить шрифт.</p>
+                <button class="button1">
+                    Подробнее
+                </button>
+            </div>
+        </div>    
+    </div>
+    <div class="container3">
+        <h2 id="Options">Наши услуги</h2>
+        <div class="container4">
+            <div class="block4">
+                
+                    <p>Кухни</p>
+            </div>
+            <div class="block5">
+                
+                    <p>Ванные</p>
+            </div>
+            <div class="block6">
+                
+                    <p>Интерьер</p>
+            </div>
+        </div>
+        <button class="button2">
+            Все услуги
+        </button>
+    </div>
+    <div id="Contact" class="container5">
+        <div class="block7">
+            <div class="block8">
+                    <h1>Давайте обсудим ваш новый проект</h1>
+                    <p></p>
+                    <p>Заполните форму или позвоните нам 
+                        для бесплатной консультации</p>
+                    <h4>info@mysite.ru</h4>
+            </div> `
+        </div>
+        
+        <div class="block9">
+            <div class="block10">
+            <table>
+                
+                <tr cellspacing="">
+                    <form class="form" action="" method="post">
+                    <td>Имя*
+                        <input class="input" required/>
+                    </td>
+                    
+                    <td>Фамилия*
+                        <input class="input" required/>
+                    </td>
+                    </form>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Эл.почта*
+                        <input class="input1" required/>
+                    </td>
+                    <td>Телефон
+                        <input class="input1" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Адрес*
+                        <input class="input" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Тема*
+                        <input class="input" required/>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+    </div>
+    <video autoplay width="1500" height="800" controls>
+        <source src="https://www.youtube.com/watch?v=YM9VxRXEsqE" type='video/mp4'>
+    </video>
+    <video controls autoplay src="{% static "video.mp4" %}"></video>
+    <div class="block20">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-youtube-play"></i>
+    </div>
+
+</body>
+</html>

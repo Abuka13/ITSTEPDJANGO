@@ -2,7 +2,7 @@ from django.urls import path
 from django_app import views
 urlpatterns = [
     path('home/', views.home, name='home'),
-    path('profile/', views.login_f, name='login'),
+    path('home/profile/<int:user_id>/', views.profile, name='profile'),
 
 
     #TODO АУТИНТЕФИКАЦИЯ

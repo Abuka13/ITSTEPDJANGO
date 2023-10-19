@@ -7,10 +7,48 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, get_object_or_404
 
 def home(request):
+
     return render(request, 'home.html')
 
+@login_required
+def profile(request, user_id):
+    user = get_object_or_404(User, id=user_id)
+    return render(request, 'profile.html', {'user': user})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TODO АУТИНТЕФИКАЦИЯ
 def logout_f(request):
     logout(request)
     return redirect(register_f)
@@ -48,5 +86,3 @@ def register_f(request):
         return redirect(login_f)
     else:
         raise Exception("Method not allowed!")
-def profile(request):
-    return render(request, 'profile.html')

@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("{% static 'bg.jpg' %}");
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    max-width: 400px;
+    width: 90%;
+    min-height: 500px;
+    border: 2px solid #0088FF;
+    box-shadow: 0 0 10px #007CDA, 0 0 10px #007CDA, 0 0 10px #007CDA;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+.form .logo {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    margin-bottom: 70px;
+}
+.form-ctrl {
+    display: flex;
+    margin: 20px auto;
+}
+
+.form-ctrl input {
+    display: inline-block;
+    flex: 1;
+    padding: 9px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: transparent;
+    border: 2px solid #0088FF;
+    box-shadow: 0 0 10px #007CDA, 0 0 10px #007CDA, 0 0 10px #007CDA;
+    border-right: none;
+    outline: none;
+    font-size: 18px;
+    color: #0088FF;
+    padding-left: 20px;
+    transition: box-shadow 1s, color 1s;
+}
+.form-ctrl input:hover, .form-ctrl input:focus {
+    border: 2px solid transparent;
+    color: #FCAA2E;
+    box-shadow: 0 0 10px #FCAA2E, 0 0 10px #FCAA2E, 0 0 10px #FCAA2E;
+}
+::placeholder {
+    color: #0088FF;
+    opacity: .9;
+}
+.form-ctrl img {
+    width: 40px;
+    display: block;
+    margin: 0px 20px;
+}
+.r {
+    margin-top: 60px;
+}
+.r input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+    border-right: 2px solid #0088FF;
+}
+.form .btn {
+    display: block;
+    width: 200px;
+    background: transparent;
+    border: 2px solid #0088FF;
+    color: #0088FF;
+    padding: 7px;
+    font-size: 22px;
+    margin: 50px auto;
+    margin-top: 90px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #007CDA, 0 0 10px #007CDA, 0 0 10px #007CDA;
+    cursor: pointer;
+    transition: box-shadow 1s, color 1s;
+}
+.form .btn:hover {
+    border: 2px solid transparent;
+    color: #FCAA2E;
+    box-shadow: 0 0 10px #FCAA2E, 0 0 10px #FCAA2E, 0 0 10px #FCAA2E;
+}
+
+       </style>
+</head>
+<body>
+    <div class="container">
+          <a href="{% url 'home' %}"><i  style="font-size: 1.5em; color: #0088FF; " class="fa-solid fa-house"></i></a>
+          <form action="{% url "login" %}" method="post" class="form">
+              {% csrf_token %}
+              <img src="{% static 'logo.png' %}" class="logo" alt="logo">
+              <div class="form-ctrl">
+                  <img src="{% static 'user.png' %}" alt="user">
+                  <input name="username" type="text" placeholder="Ник">
+              </div>
+              <div class="form-ctrl r">
+                <input name="password" type="password" placeholder="Пароль">
+                <img src="{% static 'lock.png' %}" alt="pass">
+            </div>
+            <button class="btn">Войти</button>
+          </form>
+    </div>
+</body>
+</html>

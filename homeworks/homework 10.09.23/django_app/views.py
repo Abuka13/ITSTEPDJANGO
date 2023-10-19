@@ -48,3 +48,5 @@ def register_f(request):
         return redirect(login_f)
     else:
         raise Exception("Method not allowed!")
+def profile(request):
+    return render(request, 'profile.html')

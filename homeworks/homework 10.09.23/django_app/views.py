@@ -9,41 +9,38 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 
+from django_app.models import UserProfile
+
+
 def home(request):
 
     return render(request, 'home.html')
 
 @login_required
-def profile(request, user_id):
-    user = get_object_or_404(User, id=user_id)
-    return render(request, 'profile.html', {'user': user})
+def profile(request):
+    user = request.user
+    user_profile = user.profile  # models.Post.objects.get(user=user)
+    context = {"profile": user_profile}
+
+    return render(request, "profile.html", context)
 
 
+@login_required
+def create_avatar(request, pk: str):
+    if request.method == 'GET':
+        return render(request, 'profile.html')
+    elif request.method=='POST':
 
+        author = request.user
+        image = request.POST.get('image')
+        new_photo = UserProfile.objects.create(user=author, image=image)
+        return redirect(reverse('profile', args=[pk]))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def add_post(request):
+    if request.method == 'GET':
+        return render(request, 'addpost.html')
+    elif request.method == 'POST':
+        return render(request, 'addpost.html')
 
 
 
@@ -81,7 +78,7 @@ def register_f(request):
             password=make_password(password),
             first_name=name,
             last_name=surname,
-            email=email
+            email=email,
         )
         return redirect(login_f)
     else:

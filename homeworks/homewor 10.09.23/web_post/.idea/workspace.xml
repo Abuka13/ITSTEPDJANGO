@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db7e553d-f293-4ec0-95ea-e6442b69eebf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../3_web_api/backend/DOCS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3_web_api/backend/scripts/migrations.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/django_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/django_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/django_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/django_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/django_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/backend/django_settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/backend/django_settings/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_web_api/схема.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../3_web_api/схема.drawio" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Uf44CZb7wCZPcASPynrHWdOfxG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/github_projects/PyE-222-1/projects/11/django-awesome/2_blog_posts/templates/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\github_projects\PyE-222-1\projects\11\django-awesome\2_blog_posts\templates\components" />
+      <recent name="C:\github_projects\PyE-222-1\projects\11\django-awesome\2_blog_posts\django_app" />
+      <recent name="C:\github_projects\PyE-222-1\projects\11\django-awesome\2_blog_posts\static\media\users\avatars" />
+      <recent name="C:\github_projects\PyE-222-1\projects\11\django-awesome\2_blog_posts\templates\django_app" />
+      <recent name="C:\github_projects\PyE-222-1\projects\11\django-awesome\2_blog_posts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db7e553d-f293-4ec0-95ea-e6442b69eebf" name="Changes" comment="" />
+      <created>1693317107436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693317107436</updated>
+      <workItem from="1693317108588" duration="618000" />
+      <workItem from="1693321898246" duration="533000" />
+      <workItem from="1693322471789" duration="2360000" />
+      <workItem from="1693487328194" duration="9652000" />
+      <workItem from="1693570167242" duration="361000" />
+      <workItem from="1693573699917" duration="10211000" />
+      <workItem from="1693921318002" duration="4583000" />
+      <workItem from="1693926281748" duration="3446000" />
+      <workItem from="1694097647991" duration="3056000" />
+      <workItem from="1694179036698" duration="643000" />
+      <workItem from="1694183677764" duration="617000" />
+      <workItem from="1694246228381" duration="250000" />
+      <workItem from="1694526310637" duration="17000" />
+      <workItem from="1694530863305" duration="966000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

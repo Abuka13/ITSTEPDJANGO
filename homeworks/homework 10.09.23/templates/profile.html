@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
         body {
@@ -12,43 +13,127 @@
 
 }
 
+        .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Затемнение с черным цветом и прозрачностью */
+    z-index: 999; /* Заглубить overlay поверх всего остального контента */
+}
+
+.large-profile-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Заглубить большую картинку поверх overlay */
+
+}
+.button1 {
+
+    background-color: #0170e7; /* Цвет кнопки при наведении */
+
+}
+
     </style>
 </head>
 <body>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; height: 100%">
+    <div onclick="{% url 'home' %}" class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; height: 100%">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       <span class="fs-4">Sidebar</span>
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="/home" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
-        </a>
-      </li>
 
+<li class="nav-item">
+    <button onclick="goToHome()" class="button" style="transition: background-color 0.3s; width: 100%; background: none; border:none;">
+        <div style="display: flex; flex-direction: row;  font-size: 20px; align-items: center">
+
+            <i href="/home" class="fa-solid fa-house" style="color: white; margin-bottom: 5%;"></i>
+            <a href="/home" class="nav-link" style="color: white; text-decoration: none; margin-bottom: 5%" aria-current="page">
+
+
+                Главная
+            </a>
+        </div>
+    </button>
+</li>
+        <li class="nav-item" style="color:white;" >
+        <button onclick="addpost()"  style="transition: background-color 0.3s; height: 100px; width: 100%; background: none; border:none;">
+        <div style="display: flex; color:white; flex-direction: row; font-size: 20px; align-items: center">
+            <i class="fa-solid fa-plus"></i>
+            <p  style="color: white; text-decoration: none; margin-top: 5%; margin-left: 7%" aria-current="page">
+
+                Добавить
+            </p>
+        </div>
+        </button>
+      </li>
     </ul>
     <hr>
+
+
+
     <div class="dropdown">
       <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
+
+        <img src="{{ user_profile.image.url }}" alt="" width="32" height="32" class="profile-image">
+
+        <strong>{{ user_profile.user }}</strong>
+
       </a>
       <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
+
+        <li><form action="{% url "create_avatar" user.id  %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Загрузить аватарку</button>
+</form></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+        <li><a class="dropdown-item" href="#">Выйти</a></li>
       </ul>
     </div>
   </div>
 
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const smallProfileImage = document.querySelector('.profile-image');
+    const largeProfileImage = document.createElement('img');
+    const overlay = document.createElement('div');
 
+    largeProfileImage.classList.add('large-profile-image');
+    overlay.classList.add('overlay');
+    document.body.appendChild(largeProfileImage);
+    document.body.appendChild(overlay);
+
+    smallProfileImage.addEventListener('click', function() {
+        largeProfileImage.src = this.src;
+        largeProfileImage.alt = this.alt;
+        overlay.style.display = 'block';
+        largeProfileImage.style.display = 'block';
+    });
+
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        largeProfileImage.style.display = 'none';
+    });
+});
+function goToHome() {
+        window.location.href = 'http://127.0.0.1:8000/home/'; // Перенаправить на главную страницу
+}
+function addpost() {
+        window.location.href = 'http://127.0.0.1:8000/addpost/'; // Перенаправить на главную страницу
+}
+    </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
 

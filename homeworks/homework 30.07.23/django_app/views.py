@@ -18,6 +18,22 @@ def home(request):
 def welcome(request):
     return render(request, 'welcome.html')
 
+def three(request):
+    if request.method == 'GET':
+        return render(request, 'home.html')
+    elif request.method == 'POST':
+        time = request.POST.get('time')
+
+        return render(request, 'home2.html', context={"time": time})
+def five(request):
+    if request.method == 'GET':
+        return render(request, 'home.html')
+    elif request.method == 'POST':
+        time = 5
+
+
+        return render(request, 'home1.html', context={"time": time})
+
 
 def create_account(request):
 
@@ -43,6 +59,12 @@ def computer_club(request):
 def logout_f(request):
     logout(request)
     return redirect(register_f)
+
+@login_required
+def logout_ff(request):
+    logout(request)
+    return redirect(computer_club)
+
 def login_f(request):
     if request.method == 'GET':
         return render(request, 'login.html')

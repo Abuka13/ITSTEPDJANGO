@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таймер обратного отсчета</title>
+    <style>
+        .timer {
+            font-size: 2em;
+            text-align: center;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="timer" id="timer">1:00</div>
+
+<script>
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    window.onload = function () {
+        var oneMinute = 60, // Задайте здесь время в секундах
+            display = document.querySelector('#timer');
+        startTimer(oneMinute, display);
+    };
+</script>
+
+</body>
+</html>

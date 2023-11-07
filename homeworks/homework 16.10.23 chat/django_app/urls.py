@@ -3,13 +3,15 @@ from django.urls import path
 from django_app import views_a
 
 urlpatterns = [
+    path('login/', views.login_f, name='login'),
+    path('logout/', views.logout_f, name='logout'),
+    path('register/', views.register_f, name='register'),
+
     path("data/", views.data, name="data"),
     path("", views.rooms, name="rooms"),
     path("<slug:slug>/", views.room, name="room"),
 
-    path('login/', views.login_f, name='login'),
-    path('logout/', views.logout_f, name='logout'),
-    path('register/', views.register_f, name='register'),
+
 ]
 
 websocket_urlpatterns = [

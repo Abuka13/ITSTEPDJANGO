@@ -1,0 +1,34 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% block main %}
+
+<div class="container my-5 w-50 bg-light card p-3">
+<div class="d-flex w-100 align-items-center justify-content-between">
+    <div style="font-family: Arial; font-size: 20px;">
+        <div class="profile-info">
+            <label for="name">Имя:</label>
+            <span id="name">{{ profile.user.first_name }}</span>
+        </div>
+        <div class="profile-info">
+            <label for="name">Фамилия:</label>
+            <span id="name">{{ profile.user.last_name }}</span>
+        </div>
+        <div class="profile-info">
+            <label for="email">Email:</label>
+            <span id="email">{{ profile.user.email }}</span>
+        </div>
+    </div>
+    <form action="{% url "avatar" %}" method="post">
+        {% csrf_token %}
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Отправить">
+    </form>
+    {% if profile.avatar %}
+        <img src="{% static profile.avatar.url %}" alt="image" class="img-fluid bd-placeholder-img" width="200"/>
+    {% else %}
+        <img src="{% static 'media/users/avatars/default.jpg' %}" alt="image" class="img-fluid bd-placeholder-img" width="200"/>
+
+    {% endif %}
+</div>
+</div>
+{% endblock main %}

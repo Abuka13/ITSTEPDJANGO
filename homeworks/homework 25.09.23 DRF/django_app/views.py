@@ -41,12 +41,28 @@ response_schema_dict = {
         },
     ),
 }
-
+@swagger_auto_schema(  # документация
+    method="GET",
+    manual_parameters=[
+        openapi.Parameter("search_by", openapi.IN_QUERY, description="Поиск по этому параметру", type=openapi.TYPE_STRING, default="")
+    ],  # Описание входных данных
+    responses={200: serializers.ComplaintsSerializer, 400: "Error detail"},  # Описание выходных данных
+)
 @api_view(['GET'])
 def complaints(request):
     new =  Complaints.objects.all()
     serializer = ComplaintsSerializer(new, many=True)
-    return Response(serializer.data)
+    search_by = request.query_params.get("search_by", "")  # query params
+    news_objs = models.Complaints.objects.filter(author__icontains=search_by)  # DB -> Python
+    news_jsons = serializers.ComplaintsSerializer(news_objs, many=True).data  # Python -> JSON
+
+    combined_data = {
+        "complaints": serializer.data,
+        "search_results": news_jsons
+    }
+
+    return Response(combined_data, status=status.HTTP_200_OK)
+
 
 
 

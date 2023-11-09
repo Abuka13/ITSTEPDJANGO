@@ -67,4 +67,4 @@ def read_json(filename='data.json') -> list[dict[any]]:
     # ]
     with open(f'./static/{filename}', mode='r', encoding="utf-8") as file:
         data = json.load(file)
-    return data
+        return data

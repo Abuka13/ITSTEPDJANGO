@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecebfc39-1d66-47ed-945d-43440fa88307" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../homework 22.10.23/Продвинутый swagger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework 22.10.23/Продвинутый swagger/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2VzXeZox0tBnUZLCaKBp07XHyPe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 23.07.23 simple_tag",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="жалоб и предложений» на Django ORM" type="Python.DjangoServer" factoryName="Django server">
+      <module name="жалоб и предложений» на Django ORM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecebfc39-1d66-47ed-945d-43440fa88307" name="Changes" comment="" />
+      <created>1695839979082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695839979082</updated>
+      <workItem from="1695839980119" duration="601000" />
+      <workItem from="1695871362750" duration="2589000" />
+      <workItem from="1695919216533" duration="598000" />
+      <workItem from="1695998633846" duration="1197000" />
+      <workItem from="1696052182451" duration="615000" />
+      <workItem from="1696077669217" duration="1180000" />
+      <workItem from="1696150543660" duration="674000" />
+      <workItem from="1696155536005" duration="7721000" />
+      <workItem from="1696170325339" duration="2797000" />
+      <workItem from="1696253352228" duration="4918000" />
+      <workItem from="1696483153118" duration="432000" />
+      <workItem from="1696483590105" duration="14886000" />
+      <workItem from="1696677129018" duration="3263000" />
+      <workItem from="1696786213042" duration="27000" />
+      <workItem from="1696786724369" duration="622000" />
+      <workItem from="1698852384921" duration="674000" />
+      <workItem from="1699381578867" duration="1444000" />
+      <workItem from="1699422851519" duration="1192000" />
+      <workItem from="1699437539148" duration="29000" />
+      <workItem from="1699697807481" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4964735-5096-4b77-b7a9-d2215a827f74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f4964735-5096-4b77-b7a9-d2215a827f74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="2VyFgiwX439h6Rd2gYY78qVMzcS" />
   <component name="ProjectViewState">
@@ -32,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 11.09.23",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Github/ITSTEPDJANGO/homeworks/homework 23.07.23",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,6 +102,7 @@
       <workItem from="1699379531289" duration="1787000" />
       <workItem from="1699437575739" duration="1034000" />
       <workItem from="1699461837277" duration="1751000" />
+      <workItem from="1699694845087" duration="613000" />
     </task>
     <servers />
   </component>
